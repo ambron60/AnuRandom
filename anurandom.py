@@ -12,6 +12,8 @@ class AnuRandom(object):
             url = base_url + "RawChar.php"
         elif type == "HEX":
             url = base_url + "RawHex.php"
+        else:
+            url = None
 
         data = requests.get(url).content
         return data
@@ -32,4 +34,4 @@ class AnuRandom(object):
 
 if __name__ == "__main__":
     data = AnuRandom()
-    print(data.get_bin())
+    print(data.get_bin()) # retrieve bit stream
