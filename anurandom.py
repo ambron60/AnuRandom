@@ -32,4 +32,4 @@ class AnuRandom(object):
 
 if __name__ == "__main__":
     data = AnuRandom()
-    # print(data.get_bin())
+    print(data.get_bin())
